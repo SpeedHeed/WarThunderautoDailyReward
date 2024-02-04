@@ -1,3 +1,6 @@
+$x = 1282
+$y = 612
+
 # Pfad zur Steam-Anwendung
 $steamPath = "C:\Program Files (x86)\Steam\Steam.exe"
 
