@@ -45,7 +45,7 @@ Windows Powershell
  powershell.exe -executionpolicy bypass -WindowStyle hidden "F:\PATH\WarThunder_DailyReward.ps1"
 ```
 
-Task for Reference: [WarThunderDailyReward.xml](https://m365scripts.com/microsoft365/schedule-powershell-script-execution-with-task-scheduler/](https://github.com/SpeedHeed/WarThunderautoDailyReward/blob/main/WarThunderDailyReward.xml)https://github.com/SpeedHeed/WarThunderautoDailyReward/blob/main/WarThunderDailyReward.xml)
+Task for Reference: [WarThunderDailyReward.xml](https://github.com/SpeedHeed/WarThunderautoDailyReward/blob/main/WarThunderDailyReward.xml)
 
 Change this:
 ```powershell
