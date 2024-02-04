@@ -1,17 +1,17 @@
 $x = 1282
 $y = 612
 
-# Pfad zur Steam-Anwendung
+# Path to Steam
 $steamPath = "C:\Program Files (x86)\Steam\Steam.exe"
 
-# Spiel-ID des gewünschten Spiels (du findest dies in der URL des Spiels im Steam-Shop)
+# Use the Steam ID to start the game
 $spielID = "236390"
 
-# Starte das Steam-Spiel
+# Starts the game
 Start-Process -FilePath $steamPath -ArgumentList "-applaunch $spielID"
 $duration = 70
 
-# Starte den Countdown
+# Starts the Countdown until loaded in game
 Write-Host "Countdown gestartet..."
 
 # Führe den Countdown aus
@@ -21,7 +21,7 @@ while ($duration -ge 0) {
     Start-Sleep -Seconds 1  # Wartezeit von 1 Sekunde
     $duration--  # Reduziere die verbleibende Zeit um 1 Sekunde
 }
-Write-Host "Timer ist abgelaufen!"
+Write-Host "Timer stopped!"
 
 # Importiere die erforderliche DLL
 Add-Type @"
@@ -62,23 +62,23 @@ $p2 = [System.Windows.Forms.Cursor]::Position.Y = 612
     public static extern void mouse_event(uint dwFlags, int dx, int dy, uint dwData, int dwExtraInfo);
 "@ -Name U32 -Namespace W -ErrorAction Ignore
 
-# Maus-Tasten-Flags
+# Mouse-button-Flags
 $leftButtonDown = 0x0002
 $leftButtonUp = 0x0004
 
-# Simuliere Mausklick (Maus-Taste gedrückt)
+# Simulates the mouse click (pressed)
 [W.U32]::mouse_event($leftButtonDown, 0, 0, 0, 0)
 
-# Wartezeit für 500ms
+# Wait for 500ms
 Start-Sleep -Milliseconds 500
 
-# Simuliere Mausklick (Maus-Taste losgelassen)
+# Simulates the mouse click (release)
 [W.U32]::mouse_event($leftButtonUp, 0, 0, 0, 0)
 
 Start-Sleep -Seconds 1
 }
 
-Write-Host "Programm schliesst sich nun!"
+Write-Host "War Thunde is closing"
 
 Start-sleep -Seconds 3
 
