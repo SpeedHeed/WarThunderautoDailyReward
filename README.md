@@ -1,9 +1,9 @@
 ![War Thunder!](https://static.warthunder.com/upload/image/!%202019%20NEWS/12%20December/New%20Year%20Sale/britain_new_year_bundle_inner_bbf6b0588a9eba6980ba9833561579e5.jpg)
 ---
-#                                                       Description
+#                                  Description
 A Powershell Script to automatically get the Daily Rewards in War Thunder once it is set up
 
-#                                                      Usage
+#                                 Usage
 
 ### Prerequisites
 
