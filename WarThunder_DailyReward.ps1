@@ -49,9 +49,9 @@ Write-Host "War Thunder ist nun im Vordergrund!"
 
 Add-Type -AssemblyName System.Windows.Forms
 
-$p1 = [System.Windows.Forms.Cursor]::Position.X = 1282
+$p1 = [System.Windows.Forms.Cursor]::Position.X = $x
 
-$p2 = [System.Windows.Forms.Cursor]::Position.Y = 612
+$p2 = [System.Windows.Forms.Cursor]::Position.Y = $y
 
 [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point($p1, $p2)
 
