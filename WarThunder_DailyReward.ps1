@@ -1,3 +1,4 @@
+#Coordinates of the Daily Reward Button
 $x = 1282
 $y = 612
 
@@ -12,7 +13,7 @@ Start-Process -FilePath $steamPath -ArgumentList "-applaunch $spielID"
 
 $programName = "aces"
 
-
+# Wait until the  game is started
 while (-not (Get-Process $programName -ErrorAction SilentlyContinue)) {
     Write-Host "Waiting for $programName to start..."
     Start-Sleep -Seconds 90
